@@ -20,6 +20,14 @@ use App\Http\Controllers\History\DiagnosisHistoryController;
 
 Route::view('/', 'welcome');
 
+Route::view('/chat', 'chat-diagnosa');
+
+Route::view('/dash', 'dash');
+
+Route::view('/log', 'login');
+
+Route::view('/reg', 'register');
+
 Route::controller(ArticleController::class)->group(function (){
     Route::get('/artikel', 'article');
 });
